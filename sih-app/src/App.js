@@ -1,37 +1,19 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-      
-//     </div>
-//   );
-// }
-
-// export default App;
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './components/login/Login';
+import Student from './components/dahboard/student/Student';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
-import Login from "./components/login/Login";
-
-
-const App = () => {
-
-
-
-
-
+function App() {
   return (
-    <div className='container'>
-
-      
-        <Login/>
-      
-
-    
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard/student" element={<Student />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
-
+export default App;

@@ -15,3 +15,55 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+
+/* :root {
+  --hover-color: #1d7f8c;
+  --secondary-color: #60c6d2;
+  --primary-color: #c1f1f5;
+  --background-color-light: #e2fafc;
+  --background-color-dark: #303233;
+  --text-color-light: #2d2929e1;
+  --text-color-dark: #e2fafc;
+}
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+} */
+
+:root{
+  --background-color-light: #fffefe;
+  --primary-color-light: #0084FF;
+  --secondary-color-light: #1272CC;
+  --hover-color-light: #004F99;
+  --text-primary-color-light: #003566;
+  --text-secondary-color-light: #004F99;
+
+}
+
+:root{
+  --background-color-dark: #1d1b1b;
+  --primary-color-dark: #168FFF;
+  --secondary-color-dark: #45A5FF;
+  --hover-color-dark: #73BCFF;
+  --text-primary-color-dark: #A2D2FF;
+  --text-secondary-color-dark: #73BCFF;
+}
+
+

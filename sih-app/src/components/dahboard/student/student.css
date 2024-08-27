@@ -109,9 +109,45 @@
                       color: var(--background-color-light);
                     }
                 }
+
+                
+
+                .panel-add{
+                  display: none;
+                  padding: 5px;
+                  gap: 5px;
+    
+                  &.collapsedAdd{
+                    display: flex;
+                  }
+                  
+                  ul{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    li{
+                      width: 100%;
+                      display: grid;
+                      grid-template-columns: repeat(2, 1fr);
+                      gap: 10px;
+
+                      h2{
+                        font-size: 18px;
+                      }
+
+                      i{
+                        color: var(--background-color-light);
+                        font-size: 18px;
+                      }
+
+                    }
+                  }
+                }
             }
-          
-  
             .line {
               width: 90%;
               height: 3px;
@@ -125,6 +161,10 @@
             background-color: var(--background-color-light);
   
             h2 {
+              color: var(--text-primary-color-light);
+            }
+
+            i {
               color: var(--text-primary-color-light);
             }
   
@@ -243,10 +283,21 @@
           display: flex;
           gap: 20px;
           padding: 20px;
+          height: 450px;
+          width: 100%;
+
   
           .Graph {
             flex: 2;
             background-color: var(--primary-color);
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
+
+            .graph-box{
+              width: 100%;
+              padding: 20px;
+
+            }
           }
   
           .recent {
